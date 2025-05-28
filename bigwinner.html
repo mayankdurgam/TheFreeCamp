@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Get ₹50 UPI Cashback - Big Winner</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: linear-gradient(135deg, #000000, #1a1a1a);
+      color: white;
+      text-align: center;
+    }
+    .container {
+      padding: 30px 20px;
+      max-width: 500px;
+      margin: auto;
+    }
+    h1 {
+      font-size: 32px;
+      color: #00ffd5;
+    }
+    h2 {
+      font-size: 20px;
+      color: #ffcc00;
+      margin: 15px 0;
+    }
+    .box {
+      background: #111;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 12px #ff00ff55;
+      margin-top: 20px;
+    }
+    .box p {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+    a {
+      color: #00ffff;
+      text-decoration: underline;
+    }
+    input[type="text"] {
+      width: 90%;
+      max-width: 400px;
+      padding: 12px;
+      margin-top: 20px;
+      border-radius: 10px;
+      border: none;
+      background-color: #222;
+      color: white;
+      font-size: 16px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 14px 30px;
+      font-size: 18px;
+      color: white;
+      background: linear-gradient(to right, #ff007f, #ff9900);
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 0 10px #ff00ff88;
+    }
+    button:hover {
+      transform: scale(1.05);
+    }
+    .footer {
+      font-size: 12px;
+      color: #bbb;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>💸 Get ₹50 Instantly!</h1>
+    <h2>Only on Signup via Big Winner 🎯</h2>
+
+    <div class="box">
+      <p>🪂 Step 1: <a href="https://d2tllrvk6rjrbm.cloudfront.net/sharebw/bw_landing.html?ic=41491184" target="_blank" rel="noopener noreferrer">Download Big Winner</a></p>
+      <p>📝 Step 2: Sign up and complete your account</p>
+      <p>💰 Step 3: Enter your UPI below and claim ₹50</p>
+    </div>
+
+    <form id="claimForm">
+      <input type="text" id="upi" placeholder="Enter Your UPI ID (e.g. user@paytm)" required />
+      <br>
+      <button type="submit">🎁 Claim ₹50 Now</button>
+    </form>
+
+    <div class="footer">
+      ⚠️ Valid for new users only. Rewards processed in 24–48 hrs.
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("claimForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      var upi = document.getElementById("upi").value.trim();
+      if (!upi.includes("@") || upi.length < 5) {
+        alert("❌ Please enter a valid UPI ID (e.g. user@paytm)");
+      } else {
+        alert("🎉 Success! ₹50 will be sent to " + upi + " shortly. Thank you for joining Big Winner!");
+        document.getElementById("upi").value = "";
+      }
+    });
+  </script>
+</body>
+</html>
